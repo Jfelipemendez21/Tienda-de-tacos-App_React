@@ -1,16 +1,18 @@
 import React from 'react'
+import carritoVacio from "../imgs/carritoVacio.png"
 
 function LimpiarCarrito({carrito, limpiarCarrito}) {
   return carrito.length > 0 
   ?(
-    <div>
-        <button onClick={limpiarCarrito}>Limpiar carrito</button>
+    <div className='my-4'>
+        <button className='btn btn-dark' onClick={limpiarCarrito}>Limpiar carrito</button>
     </div>
   )
   :(
-    <div>
-        <h3>Carrito vacio</h3>
-        <p>Imagen de carrito triste y vacio :v</p>
+    <div className='container m-4'>
+        <h3>Carrito de compras triste y vacio :'c</h3>
+        <p className='text-danger'>!Aun no has escogido tus tacos!</p>
+        <img src={carritoVacio} alt=''></img>
     </div>
   )
 }

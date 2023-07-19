@@ -97,8 +97,15 @@
     text-align: center;
 }
 
-.imgSwiper{
-    width: 50%;
+.itemCarrito{
+    border-bottom: 1px solid rgb(185, 181, 181);
+    /* border-radius: 10px; */
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 

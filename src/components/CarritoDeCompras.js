@@ -90,10 +90,10 @@ function CarritoDeCompras() {
                  <Route path="/tacos/ingredientes/:nombre" element={ <Detalles data={productos} /> }>
                  </Route>
                 <Route path="/tacos/carrito" element={
-                    <div>
+                    <div className='container m-3'>
                         <h2>Carrito de tacos</h2>
                         {carrito.map((producto, index)=>(
-                        <ItemCarrito key={index} data={producto} deleteToProduct={deleteToProduct} deleteToAllProducts={deleteToAllProducts} carrito={carrito}/>
+                        <ItemCarrito key={index} data={producto} deleteToProduct={deleteToProduct} deleteToAllProducts={deleteToAllProducts} carrito={carrito} AddCarrito={AddCarrito}/>
                         ))}
                         <PrecioTotal precioTotal={precioTotal}/>
                         <LimpiarCarrito carrito={carrito} limpiarCarrito={limpiarCarrito} />
