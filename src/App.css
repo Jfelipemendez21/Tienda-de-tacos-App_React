@@ -87,4 +87,18 @@
     margin-left: 60px;
     justify-content: space-between;
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide{
+    width: 100%;
+    text-align: center;
+}
+
+.imgSwiper{
+    width: 50%;
+}
+
 

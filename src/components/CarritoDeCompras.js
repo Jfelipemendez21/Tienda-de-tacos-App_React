@@ -59,14 +59,17 @@ function CarritoDeCompras() {
             setLoading(false)
         },3000)
     }, [])
+
     
     
   return (
     <div>
         <div>
-            <NavBar productos={productos} tacosTotales={tacosTotales} cambiarEstiloCarrito={cambiarEstiloCarrito}/> 
+            <NavBar productos={productos} tacosTotales={tacosTotales} cambiarEstiloCarrito={cambiarEstiloCarrito} /> 
             <Routes>
-                <Route index path="/" element={<TiendaDeTacos />}></Route>
+                <Route index path="/" element={
+                    <TiendaDeTacos/>
+                }></Route>
                 <Route path='/tacos' element={
                     <div className='container m-3 p-3'>
                         <h1>Nuestros tacos</h1>

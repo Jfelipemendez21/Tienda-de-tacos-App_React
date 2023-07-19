@@ -19,7 +19,7 @@ function NavBar({tacosTotales, cambiarEstiloCarrito, productos}) {
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nuestros tacos</a>
           <div class="dropdown-menu">
             {productos.map((taco)=>
-              <Link class="dropdown-item mx-4" to={`tacos/ingredientes/${taco.nombre}`}>{taco.nombre}</Link>
+              <Link class="dropdown-item" to={`tacos/ingredientes/${taco.nombre}`}>{taco.nombre}</Link>
             )}
           </div>
         </li>
