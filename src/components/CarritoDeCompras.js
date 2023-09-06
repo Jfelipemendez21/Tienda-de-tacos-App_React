@@ -58,7 +58,7 @@ function CarritoDeCompras() {
         setTimeout(()=>{
             setLoading(false)
         },3000)
-    }, [])
+    }, [productos])
 
     
     
